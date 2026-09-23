@@ -1,0 +1,26 @@
+name: Validate skill package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Python unit tests
+        run: python3 -m unittest discover -s .agents/skills/fp/scripts/tests -p 'test_*.py' -v
+      - name: Validate skill suite
+        run: python3 .agents/skills/fp/scripts/validate_suite.py --suite-root .agents/skills/fp --through 2
+      - name: Check locked dependencies
+        run: uv lock --check
+      - name: Lint suite scripts
+        run: uv run --frozen ruff check .agents/skills/fp/scripts
