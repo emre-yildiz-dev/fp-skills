@@ -1,0 +1,20 @@
+[
+  {
+    "id": "three-effect-mutations",
+    "state_prefix": "[Treat the three supplied TypeScript files as the complete diff. The spec requires caller-visible conflicts, redacted serialized failures, and retries only below translation.]",
+    "input": "Review this change and keep Standards, Spec, and FCIS/Effect findings independent. Read-only: do not edit files.",
+    "rubric": [
+      "The response has separate Standards, Spec, and FCIS/Effect sections",
+      "It flags retry above narrowing in retry-above-seam.ts",
+      "It flags arbitrary raw failure serialization in raw-error-event.ts",
+      "It flags NotFound converted to a defect in wrong-500-handler.ts",
+      "Each finding cites a fixture location and the relevant rule, and no file is modified"
+    ],
+    "files": [
+      "evals/fp-execution-fixtures/retry-above-seam.ts",
+      "evals/fp-execution-fixtures/raw-error-event.ts",
+      "evals/fp-execution-fixtures/wrong-500-handler.ts",
+      "evals/fp-execution-fixtures/project-rules.md"
+    ]
+  }
+]

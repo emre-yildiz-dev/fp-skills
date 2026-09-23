@@ -1,0 +1,4 @@
+[
+  {"query":"Choose the capability port that keeps tax calculation pure while the external rate client stays replaceable.","should_trigger":true},
+  {"query":"Show me the current Effect Layer.provide API signature.","should_trigger":false}
+]

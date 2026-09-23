@@ -1,0 +1,10 @@
+[project]
+name = "fp-skills-tooling"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "ruff==0.13.1",
+]

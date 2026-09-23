@@ -1,0 +1,20 @@
+[
+  {
+    "id": "declared-404-renders-500",
+    "input": "The supplied handler advertises NotFound as 404 but the request returns 500. Diagnose it. Give the exact first command and evidence gates; do not edit the fixture during this eval.",
+    "rubric": [
+      "Before any hypothesis, the response names a concrete request or integration-test command that can distinguish 404 from 500",
+      "The failure is classified as wire/error translation rather than pure-core policy",
+      "Three to five hypotheses are ranked and each predicts an observable status, Exit, or error-channel result",
+      "The proposed probes do not render a raw Cause or secret-bearing failure",
+      "A failing regression assertion is required before the fix and the original command is rerun after it"
+    ],
+    "files": [
+      "evals/fp-execution-fixtures/package.json",
+      "evals/fp-execution-fixtures/package-lock.json",
+      "evals/fp-execution-fixtures/project-rules.md",
+      "evals/fp-execution-fixtures/wrong-500-handler.ts",
+      "evals/fp-execution-fixtures/wrong-500-http.ts"
+    ]
+  }
+]

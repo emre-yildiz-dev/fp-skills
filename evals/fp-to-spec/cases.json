@@ -1,0 +1,25 @@
+[
+  {
+    "id": "auth-spec-synthesis",
+    "state_prefix": "[The interview is complete. The source files contain every settled decision. Do not ask discovery questions.]",
+    "input": "Synthesize an implementation specification from the supplied rules, policy, and decisions. Stop on contradictions and ask only for confirmation of proposed test seams.",
+    "rubric": [
+      "The output contains all twelve sections required by artifact-contracts.md",
+      "Every one of the three settled decisions is represented and the out-of-scope UI remains out of scope",
+      "The auto-link contradiction is explicit and not silently resolved",
+      "The spec proposes separate pure-policy, Effect-orchestration, adapter-integration, and wire-contract seams for confirmation"
+    ],
+    "files": [
+      "evals/fp-planning-fixtures/effect-package.json",
+      "evals/fp-planning-fixtures/effect-resolved-lock.txt",
+      "evals/fp-planning-fixtures/effect-rc111-package.json",
+      "evals/fp-planning-fixtures/effect-rc111-context-service.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-layer-effect.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-layer-provide.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-provenance.md",
+      "evals/fp-planning-fixtures/project-rules.md",
+      "evals/fp-planning-fixtures/auth-policy.ts",
+      "evals/fp-planning-fixtures/settled-decisions.md"
+    ]
+  }
+]

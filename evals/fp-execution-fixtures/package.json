@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:approval-policy": "bun test approval-policy.test.ts",
+    "test:wrong-500": "bun run wrong-500-http.ts",
+    "verify:wrong-500-mutation": "EXPECT_STATUS=500 bun run wrong-500-http.ts"
+  },
+  "dependencies": {
+    "effect": "4.0.0-rc.111"
+  }
+}

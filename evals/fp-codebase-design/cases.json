@@ -1,0 +1,35 @@
+[
+  {
+    "id": "effect-email-verification",
+    "input": "Using effect-package.json, project-rules.md and auth-policy.ts, design an email-verification capability around the existing pure linking decision.",
+    "rubric": [
+      "The policy remains a pure core and does not acquire Effect dependencies",
+      "The design names narrow capabilities, adapters, ingress/error/egress boundaries, A/E/R contracts, a Layer graph, a composition root, and public test seams",
+      "Foreign provider and persistence failures are translated at their owning adapter boundaries"
+    ],
+    "files": [
+      "evals/fp-planning-fixtures/effect-package.json",
+      "evals/fp-planning-fixtures/effect-resolved-lock.txt",
+      "evals/fp-planning-fixtures/effect-rc111-package.json",
+      "evals/fp-planning-fixtures/effect-rc111-context-service.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-layer-effect.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-layer-provide.d.ts",
+      "evals/fp-planning-fixtures/effect-rc111-provenance.md",
+      "evals/fp-planning-fixtures/project-rules.md",
+      "evals/fp-planning-fixtures/auth-policy.ts"
+    ]
+  },
+  {
+    "id": "plain-typescript-email-verification",
+    "input": "Using plain-package.json and auth-policy.ts, design the same feature with a functional core and imperative shell.",
+    "rubric": [
+      "The design identifies pure decisions, capabilities, adapters, boundaries, and test seams",
+      "The design does not introduce Effect, Context.Service, Layer, or A/E/R terminology",
+      "The pure policy remains independent of HTTP and persistence"
+    ],
+    "files": [
+      "evals/fp-planning-fixtures/plain-package.json",
+      "evals/fp-planning-fixtures/auth-policy.ts"
+    ]
+  }
+]

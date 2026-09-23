@@ -1,0 +1,10 @@
+[
+  {"query":"Build this validation rule test-first, one behavior at a time.","should_trigger":true},
+  {"query":"Use red-green to add the endpoint while keeping policy pure.","should_trigger":true},
+  {"query":"Add the state transition with a pure failing test, then wire the Effect shell.","should_trigger":true},
+  {"query":"Fix this bug by writing the regression test before the implementation.","should_trigger":true},
+  {"query":"Why is this existing test flaky? Diagnose it; do not build a feature.","should_trigger":false},
+  {"query":"Explain what red-green-refactor means without changing code.","should_trigger":false},
+  {"query":"Review whether these tests are implementation-coupled.","should_trigger":false},
+  {"query":"Run the current unit tests and report failures.","should_trigger":false}
+]

@@ -1,0 +1,10 @@
+[
+  {"query":"Where should the capability boundary go between pure pricing policy and the payment provider?","should_trigger":true},
+  {"query":"Design this module so policy stays pure and the Effect service exposes a small interface.","should_trigger":true},
+  {"query":"Our Context.Service leaks the database client. Redesign the port and Layer ownership.","should_trigger":true},
+  {"query":"Compare two architectures for this package and place the composition root.","should_trigger":true},
+  {"query":"Center this card with CSS grid.","should_trigger":false},
+  {"query":"Install the Effect package with Bun.","should_trigger":false},
+  {"query":"What is the signature of Effect.map?","should_trigger":false},
+  {"query":"Fix this typo in the repository README.","should_trigger":false}
+]

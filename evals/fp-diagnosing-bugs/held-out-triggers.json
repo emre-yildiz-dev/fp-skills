@@ -1,0 +1,4 @@
+[
+  {"query":"The import job duplicates invoices after a retry. Reproduce the symptom and find the regression.","should_trigger":true},
+  {"query":"Explain how retries work in Effect without running or changing code.","should_trigger":false}
+]

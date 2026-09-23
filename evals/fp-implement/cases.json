@@ -1,0 +1,18 @@
+[
+  {
+    "id": "approved-endpoint-slice",
+    "state_prefix": "[The spec is approved. It defines one slice: pure approval decision, ApprovalStore capability, projected StoreFailure, HTTP 200/409 contract, and AppLive composition root. The public test seams are approved.]",
+    "input": "Describe the implementation run against the supplied fixtures, including stop gates and verification. Do not actually edit during this eval.",
+    "rubric": [
+      "Exactly one tracer slice is selected",
+      "The order is model/pure red-green, orchestration, adapter, wire, then composition-root wiring",
+      "Foreign failures are projected at the adapter and no raw failure reaches a sink",
+      "Any architecture exception is recorded with controls and revisit condition",
+      "The response contains no commit, push, or PR action"
+    ],
+    "files": [
+      "evals/fp-execution-fixtures/pure-policy.ts",
+      "evals/fp-execution-fixtures/project-rules.md"
+    ]
+  }
+]

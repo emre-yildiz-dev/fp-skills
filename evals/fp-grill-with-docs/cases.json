@@ -1,0 +1,14 @@
+[
+  {
+    "id": "grill-frontier-after-two-rounds",
+    "state_prefix": "[Two rounds are complete. Settled: existing accounts are never auto-linked by email; linking policy stays pure; provider HTTP and persistence are shell capabilities. Repository inspection found the current handler still auto-links. Still open and currently unblocked: whether migration rejects old links or grandfather them, and which wire error reports an explicit-link requirement. Test-seam choice depends on those two answers and is therefore blocked.]",
+    "input": "Continue the grilling session. Preserve settled decisions in the ledger and ask only the current frontier.",
+    "rubric": [
+      "The response asks about migration treatment and the wire error, but does not ask for the blocked test-seam choice in the same round",
+      "Every question includes a recommended answer and a concrete trade-off",
+      "The current handler behavior is presented as a repository fact/contradiction rather than a user decision",
+      "The three settled decisions remain represented in the decision ledger output"
+    ],
+    "files": ["evals/fp-planning-fixtures/existing-decisions.md"]
+  }
+]

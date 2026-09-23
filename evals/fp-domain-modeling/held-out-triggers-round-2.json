@@ -1,0 +1,4 @@
+[
+  {"query":"Clarify whether a Trial is a subscription state or a separate plan, then record the resulting invariant in the glossary.","should_trigger":true},
+  {"query":"Change the glossary heading from Domain terms to Domain Terms without altering any definition.","should_trigger":false}
+]

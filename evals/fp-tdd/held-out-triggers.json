@@ -1,0 +1,4 @@
+[
+  {"query":"Add this discount eligibility rule by first writing one failing pure behavior test.","should_trigger":true},
+  {"query":"Tell me whether the current test suite passes; do not add a feature.","should_trigger":false}
+]

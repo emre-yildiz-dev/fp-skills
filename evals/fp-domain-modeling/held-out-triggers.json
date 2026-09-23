@@ -1,0 +1,4 @@
+[
+  {"query":"Decide whether a Subscriber is distinct from a Member, record the invariant, and update the domain glossary.","should_trigger":true},
+  {"query":"Correct the spelling of Subscriber in CONTEXT.md without changing its meaning.","should_trigger":false}
+]

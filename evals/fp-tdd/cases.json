@@ -1,0 +1,20 @@
+[
+  {
+    "id": "approval-policy-core-first",
+    "input": "This is a planning-only eval: do not edit or run the fixture. Describe the test-first implementation for adding an at-limit Review branch to pure-policy.ts for open accounts when requested equals limit, then exposing the decision through an Effect service. Begin by changing the supplied public test seam's expected result, and show the exact red/green sequence and commands.",
+    "rubric": [
+      "The first red step is one ordinary failing test for the pure decision",
+      "The policy remains free of Effect and the plan names A, E, and R before orchestration",
+      "The orchestration test substitutes capabilities or a test Layer",
+      "Adapter and wire work occurs only after the core decision is green",
+      "Focused and final verification commands are exact rather than generic"
+    ],
+    "files": [
+      "evals/fp-execution-fixtures/package.json",
+      "evals/fp-execution-fixtures/package-lock.json",
+      "evals/fp-execution-fixtures/project-rules.md",
+      "evals/fp-execution-fixtures/pure-policy.ts",
+      "evals/fp-execution-fixtures/approval-policy.test.ts"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "domain-auth-terms",
+    "input": "Run headless. Read the supplied policy and decisions. Produce the glossary update, decision ledger entries, and ADR recommendations without putting Effect or database details in the glossary.",
+    "rubric": [
+      "The glossary defines domain terms from auth-policy.ts and contains no Context.Service, Layer, database, or HTTP implementation guidance",
+      "The decision ledger captures all three settled decisions and does not silently resolve the supplied contradiction",
+      "An ADR is recommended for the no-auto-link security boundary and no ADR is invented for the out-of-scope UI"
+    ],
+    "files": [
+      "evals/fp-planning-fixtures/auth-policy.ts",
+      "evals/fp-planning-fixtures/existing-decisions.md"
+    ]
+  }
+]

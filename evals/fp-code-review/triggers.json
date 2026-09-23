@@ -1,0 +1,10 @@
+[
+  {"query":"Review the diff from main to HEAD against the spec and our Effect architecture.","should_trigger":true},
+  {"query":"Review PR 42 and keep Standards, Spec, and FCIS findings separate.","should_trigger":true},
+  {"query":"Please review my uncommitted changes for functional-core violations.","should_trigger":true},
+  {"query":"Review since v1.2.0; the originating spec is docs/specs/cache.md.","should_trigger":true},
+  {"query":"Implement the fixes from yesterday's code review.","should_trigger":false},
+  {"query":"Explain what this Effect service does.","should_trigger":false},
+  {"query":"Run tests on this branch and report the output.","should_trigger":false},
+  {"query":"Refactor this repository to use a functional core.","should_trigger":false}
+]

@@ -1,0 +1,10 @@
+{
+  "name": "fp-skills",
+  "version": "1.0.0",
+  "description": "Functional Core / Imperative Shell and Effect workflow skills for Pi",
+  "license": "MIT",
+  "keywords": ["pi-package", "agent-skills", "effect-ts", "functional-core"],
+  "pi": {
+    "skills": ["./.agents/skills/fp"]
+  }
+}

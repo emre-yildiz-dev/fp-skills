@@ -1,0 +1,10 @@
+[
+  {"query":"Our glossary says Account, but this feature keeps saying Customer. Help us resolve the domain term and update CONTEXT.md.","should_trigger":true},
+  {"query":"Model the states and invariants of an enrollment, and record any durable decision that emerges.","should_trigger":true},
+  {"query":"This code allows partial cancellation but our domain docs say cancellation is whole-order. Reconcile it.","should_trigger":true},
+  {"query":"Write an ADR for the irreversible ownership boundary we just chose.","should_trigger":true},
+  {"query":"Read CONTEXT.md before changing this function.","should_trigger":false},
+  {"query":"Rename this TypeScript variable from acct to account.","should_trigger":false},
+  {"query":"What does the English word account mean?","should_trigger":false},
+  {"query":"Summarize the existing ADR without editing domain language.","should_trigger":false}
+]

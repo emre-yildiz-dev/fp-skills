@@ -1,0 +1,4 @@
+[
+  {"query":"Assess the release branch diff against its accepted specification and flag FCIS violations separately.","should_trigger":true},
+  {"query":"Apply the changes requested by the latest pull-request review.","should_trigger":false}
+]

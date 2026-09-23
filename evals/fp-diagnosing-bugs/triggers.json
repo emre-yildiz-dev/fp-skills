@@ -1,0 +1,10 @@
+[
+  {"query":"This endpoint returns 500 instead of the declared 404. Diagnose it.","should_trigger":true},
+  {"query":"The Effect exits with Die only in CI; help me reproduce and debug it.","should_trigger":true},
+  {"query":"This race test flakes one run in a hundred. Find the cause.","should_trigger":true},
+  {"query":"The worker became 4x slower after this commit. Diagnose the regression.","should_trigger":true},
+  {"query":"Explain the difference between Fail and Die in Effect.","should_trigger":false},
+  {"query":"Review this codebase for possible performance improvements; no symptom is known.","should_trigger":false},
+  {"query":"Build a new timeout feature test-first.","should_trigger":false},
+  {"query":"Summarize this stack trace without changing or running anything.","should_trigger":false}
+]

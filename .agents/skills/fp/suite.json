@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "references": [
+    "project-detection.md",
+    "fcis-architecture.md",
+    "effect-4.md",
+    "error-model.md",
+    "testing.md",
+    "artifact-contracts.md"
+  ],
+  "skills": {
+    "fp-domain-modeling": {
+      "path": "fp-domain-modeling",
+      "release": 1,
+      "user_invoked": false,
+      "references": ["project-detection.md", "fcis-architecture.md", "artifact-contracts.md"]
+    },
+    "fp-grill-with-docs": {
+      "path": "fp-grill-with-docs",
+      "release": 1,
+      "user_invoked": true,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md", "artifact-contracts.md"]
+    },
+    "fp-codebase-design": {
+      "path": "fp-codebase-design",
+      "release": 1,
+      "user_invoked": false,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md"]
+    },
+    "fp-to-spec": {
+      "path": "fp-to-spec",
+      "release": 1,
+      "user_invoked": true,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md", "artifact-contracts.md"]
+    },
+    "fp-tdd": {
+      "path": "fp-tdd",
+      "release": 2,
+      "user_invoked": false,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md"]
+    },
+    "fp-implement": {
+      "path": "fp-implement",
+      "release": 2,
+      "user_invoked": true,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md", "artifact-contracts.md"]
+    },
+    "fp-diagnosing-bugs": {
+      "path": "fp-diagnosing-bugs",
+      "release": 2,
+      "user_invoked": false,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md"]
+    },
+    "fp-code-review": {
+      "path": "fp-code-review",
+      "release": 2,
+      "user_invoked": false,
+      "references": ["project-detection.md", "fcis-architecture.md", "effect-4.md", "error-model.md", "testing.md", "artifact-contracts.md"]
+    }
+  }
+}
