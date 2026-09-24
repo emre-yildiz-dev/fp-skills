@@ -1,8 +1,17 @@
 {
   "name": "fp-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functional Core / Imperative Shell and Effect workflow skills for Pi",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emre-yildiz-dev/fp-skills.git"
+  },
+  "homepage": "https://github.com/emre-yildiz-dev/fp-skills#readme",
+  "bugs": {
+    "url": "https://github.com/emre-yildiz-dev/fp-skills/issues"
+  },
+  "files": [".agents/skills/fp/**", "evals/**", "README.md", "pyproject.toml", "uv.lock"],
   "keywords": ["pi-package", "agent-skills", "effect-ts", "functional-core"],
   "pi": {
     "skills": ["./.agents/skills/fp"]

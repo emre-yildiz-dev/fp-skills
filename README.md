@@ -22,21 +22,27 @@ The recommended workflow is `fp-grill-with-docs → fp-codebase-design → fp-to
 
 ## Install with Pi
 
-Install the pinned Git package globally so the skills are available across your projects:
+Install the npm package globally so the skills are available across your projects:
 
 ```bash
-pi install git:github.com/emre-yildiz-dev/fp-skills@v1.0.0
+pi install npm:fp-skills@1.0.1
 ```
 
-To install it only for the current project instead:
+Or install it only for the current project:
 
 ```bash
-pi install --local git:github.com/emre-yildiz-dev/fp-skills@v1.0.0
+pi install --local npm:fp-skills@1.0.1
 ```
 
-Project package declarations load only after Pi project trust is granted. Review the package and its skill instructions before trusting a project. Check configured packages with `pi list`; update this package with `pi update git:github.com/emre-yildiz-dev/fp-skills`; remove it with `pi remove git:github.com/emre-yildiz-dev/fp-skills`.
+The npm package includes the `pi-package` keyword used for Pi package gallery discovery. You can also install the same release directly from its Git tag:
 
-To update to a newer release, change the pinned tag in the install command, for example `@v1.1.0`. Releases are versioned tags; the package does not silently move a pinned tag.
+```bash
+pi install git:github.com/emre-yildiz-dev/fp-skills@v1.0.1
+```
+
+Project package declarations load only after Pi project trust is granted. Review the package and its skill instructions before trusting a project. Check configured packages with `pi list`; update the npm package with `pi update npm:fp-skills`, or the Git package with `pi update git:github.com/emre-yildiz-dev/fp-skills`; remove the source you installed with the corresponding `pi remove` command.
+
+To update to a newer release, change the pinned npm version or Git tag in the install command. Pinned versions remain fixed until you install a newer version.
 
 You can force a skill in Pi with `/skill:fp-codebase-design` or `/skill:fp-tdd`. The package contains standard `.agents/skills` directories and can also be copied into a compatible project's `.agents/skills/` directory for other Agent Skills implementations.
 
@@ -53,9 +59,9 @@ uv run --frozen ruff check .agents/skills/fp/scripts
 
 The repository also includes quality cases, trigger cases, fixtures, and an Effect-backend scenario runbook. Model/provider-dependent evaluations require a configured Pi provider and are not claimed as passing by the deterministic CI workflow; see `evals/fp-suite/effect-backend-scenarios.md` for the bounded template-validation scenarios.
 
-## Distribution status
+## Distribution
 
-Release 1 is distributed from GitHub as a Pi Git package. It is **not** published to npm and is **not** listed in the Pi package gallery.
+The skills are published as the npm package [`fp-skills`](https://www.npmjs.com/package/fp-skills) and are eligible for Pi package gallery discovery through the `pi-package` keyword. The same source is also available from GitHub as a tagged Pi Git package.
 
 ## License and attribution
 
