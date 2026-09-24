@@ -11,6 +11,9 @@
   "bugs": {
     "url": "https://github.com/emre-yildiz-dev/fp-skills/issues"
   },
+  "scripts": {
+    "prepack": "node scripts/clean-python-caches.mjs"
+  },
   "files": [".agents/skills/fp/**", "evals/**", "README.md", "pyproject.toml", "uv.lock"],
   "keywords": ["pi-package", "agent-skills", "effect-ts", "functional-core"],
   "pi": {
